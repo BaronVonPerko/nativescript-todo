@@ -3,11 +3,16 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppComponent } from "./app.component";
 import { TodoListComponent } from './components/todo-list.component';
+import { DialogNewTodo } from './dialogs/dialog.new-todo';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent
+    TodoListComponent,
+    DialogNewTodo
+  ],
+  entryComponents: [
+    DialogNewTodo
   ],
   bootstrap: [AppComponent],
   imports: [NativeScriptModule],

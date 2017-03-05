@@ -1,0 +1,8 @@
+<StackLayout margin="24" horizontalAlignment="center" verticalAlignment="center">
+    <TextField hint="New Todo Title" [text]="newTitle"></TextField>
+    
+    <StackLayout orientation="horizontal" marginTop="12">
+    <Button text="ok" (tap)="ok()"></Button>
+    <Button text="cancel" (tap)="cancel()"></Button>
+    </StackLayout>
+</StackLayout>

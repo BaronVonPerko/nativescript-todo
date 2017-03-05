@@ -1,3 +1,8 @@
 <GridLayout rows="*, 60" columns="*, 100">
+    <StackLayout>
+        <Label *ngFor="let item todoList" [text]="item.title" textWrap="true"></Label>
+        
+    </StackLayout>
+
     <Button text="Add" (tap)="addNewList()" row="1" col="1"></Button>
 </GridLayout>
