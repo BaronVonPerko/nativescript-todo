@@ -1,6 +1,10 @@
 <GridLayout rows="*, 60" columns="*, 100">
     <StackLayout>
-        <Label *ngFor="let item todoList" [text]="item.title" textWrap="true"></Label>
+        <Label 
+            *ngFor="let item of todoList" 
+            [text]="item.title" 
+            textWrap="true">
+        </Label>
         
     </StackLayout>
 
